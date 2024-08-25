@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333; 
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav li {
+    margin-left: 2rem;
+    position: relative;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-bottom: 0.8rem;
+    position: relative;
+}
+
+.navbar-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/900');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: #fff;
+    padding: 2rem;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #666; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    background-color: #666; 
+}
+
+/* Emergency Guides Section */
+#emergency-guides {
+    padding: 3rem 2rem;
+    background-color: #f5f5f5; 
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1rem;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #666; 
+}
+
+.emergency-guides-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+
+.emergency-guide-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.emergency-guide-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.emergency-guide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.emergency-guide-card:hover .emergency-guide-image img {
+    transform: scale(1.1);
+}
+
+.emergency-guide-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.emergency-guide-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.emergency-guide-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #666; 
+    color: #fff;
+}
+
+/* Reporting System Section */
+#reporting {
+    padding: 3rem 2rem;
+    background-color: #f5f5f5; 
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1rem;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #666; 
+}
+
+.reporting-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+}
+
+.quick-report-card,
+.emergency-contacts-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.quick-report-card h3,
+.emergency-contacts-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#quick-report-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#quick-report-form select,
+#quick-report-form input[type="text"],
+#quick-report-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+#quick-report-form textarea {
+    min-height: 100px;
+}
+
+#quick-report-form input[type="file"] {
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #666; 
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4d4d4d; 
+}
+
+.emergency-contacts-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.emergency-contacts-card li {
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* About Us section */
+.about-us {
+    background-color: #f8f8f8; 
+    padding: 60px 0;
+}
+
+.about-us h1 {
+    font-size: 2.5em;
+    color: #333; 
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #333; 
+    color: #ecf0f1;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: #666; 
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.social-icons a {
+    color: #ecf0f1;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+}

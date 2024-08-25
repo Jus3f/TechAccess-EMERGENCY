@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE TITLE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">WEBSITE TITLE</a>
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#emergency-guides">Guidelines</a></li>
+            <li><a href="#reporting">Reporting</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hero Section Title</h1>
+            <p>Hero Section Description</p>
+            <a href="#reporting" class="btn btn-primary">Report an Emergency</a>
+        </div>
+    </section>
+
+    <!-- Emergency Guides Section -->
+    <section id="emergency-guides">
+        <div class="section-title">
+            <h2>Emergency Guides</h2>
+        </div>
+        <div class="emergency-guides-container">
+            <div class="emergency-guide-card">
+                <div class="emergency-guide-image">
+                    <img src="https://via.placeholder.com/500" alt="">
+                </div>
+                <div class="emergency-guide-content">
+                    <h3>Card Title</h3>
+                    <p>Card Description</p>
+                    <a href="#" class="btn btn-primary">Read Guide</a>
+                </div>
+            </div>
+            <div class="emergency-guide-card">
+                <div class="emergency-guide-image">
+                    <img src="https://via.placeholder.com/500" alt="">
+                </div>
+                <div class="emergency-guide-content">
+                    <h3>Card Title</h3>
+                    <p>Card Description</p>
+                    <a href="#" class="btn btn-primary">Read Guide</a>
+                </div>
+            </div>
+            <div class="emergency-guide-card">
+                <div class="emergency-guide-image">
+                    <img src="https://via.placeholder.com/500" alt="">
+                </div>
+                <div class="emergency-guide-content">
+                    <h3>Card Title</h3>
+                    <p>Card Description</p>
+                    <a href="#" class="btn btn-primary">Read Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Reporting Section -->
+    <section id="reporting">
+        <div class="section-title">
+            <h2>Emergency Reporting System</h2>
+        </div>
+        <div class="reporting-container">
+            <div class="quick-report-card">
+                <h3>Form Title</h3>
+                <form id="quick-report-form">
+                    <select name="emergency-type" required>
+                        <option value="">Select Emergency Type</option>
+                        <option value="TYPE1">TYPE1</option>
+                        <option value="TYPE2">TYPE2</option>
+                        <option value="TYPE3">TYPE3</option>
+                        <option value="TYPE4">TYPE4</option>
+                    </select>
+
+                    <input type="text" name="location" placeholder="Location" required>
+
+                    <textarea name="description" placeholder="Brief description of the emergency" required></textarea>
+
+                    <input type="file" name="media" accept="image/*,video/*">
+
+                    <button type="submit" class="btn btn-primary">Submit Report</button>
+                </form>
+            </div>
+
+            <div class="emergency-contacts-card">
+                <h3>Emergency Contacts</h3>
+                <ul>
+                    <li><strong>Police:</strong> XX</li>
+                    <li><strong>Firefighters/Ambulance:</strong> XX</li>
+                    <li><strong>Gendarmerie:</strong> XX</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="aboutus" class="about-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+            <p>About Us Description</p>
+            <p>Additional Info</p>
+            <div class="section-title">
+                <h2>Our Team</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 1 Name: Dr. Sarah Johnson">
+                    <h3>Team Member 1 Name</h3>
+                    <p>Team Member 1 Role</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 2 Name: Capt. Michael Chen">
+                    <h3>Team Member 2 Name</h3>
+                    <p>Team Member 2 Role</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 3 Name: Emma Rodriguez">
+                    <h3>Team Member 3 Name</h3>
+                    <p>Team Member 3 Role</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Emergency Contacts</h3>
+                    <ul>
+                        <li><strong>Police:</strong> XX</li>
+                        <li><strong>Firefighters/Ambulance:</strong> XX</li>
+                        <li><strong>Gendarmerie:</strong> XX</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#emergency-guides">Guidelines</a></li>
+                        <li><a href="#reporting">Reporting</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Stay Connected</h3>
+                    <p>Sign up for emergency alerts:</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="x"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2024 Emergency Info Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/4edd713136.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
