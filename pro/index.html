@@ -1,0 +1,330 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Hack and Harvest 2024</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Event Details</a>
+                    <div class="dropdown-content">
+                        <a href="#results">Results</a>
+                        <a href="#project-gallery">Projects</a>
+                        <a href="#participants">Participants</a>
+                        <a href="#challenges">Challenges</a>
+                        <a href="#event-recap">Event Recap</a>
+                    </div>
+                </li>
+                <li><a href="#media">Media</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Impact & Future</a>
+                    <div class="dropdown-content">
+                        <a href="#sponsors">Sponsors</a>
+                        <a href="#impact">Impact</a>
+                        <a href="#future-events">Future Events</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="#resources">Event Resources</a>
+                        <a href="#blog">Blog</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Hack and Harvest 2024</h1>
+        <p>Our three-day innovation marathon brought together brilliant minds, tackling real-world challenges in agriculture and technology.</p>
+        <div class="stats">
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <div class="stat-value">20</div>
+                <div class="stat-label">Participants</div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-lightbulb"></i>
+                <div class="stat-value">7</div>
+                <div class="stat-label">Innovative Projects</div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-calendar-day"></i>
+                <div class="stat-value">3</div>
+                <div class="stat-label">Days of Collaboration</div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <div class="stat-value">5</div>
+                <div class="stat-label">Expert Mentors</div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-cogs"></i>
+                <div class="stat-value">3</div>
+                <div class="stat-label">Industry-Changing Solutions</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="section about">
+        <div class="about-content">
+            <h2>About the Event</h2>
+            <p>Hack and Harvest 2024 aimed to revolutionize agricultural practices through technology. Over 72 intense hours, teams collaborated to create innovative solutions for sustainable farming, crop optimization, and food security.</p>
+            <p>Our mission was to bridge the gap between agriculture and cutting-edge technology, fostering solutions that could make a real difference in global food production and sustainability.</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value" data-target="72">0</div>
+                    <div class="stat-label">Hours</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-target="20">0</div>
+                    <div class="stat-label">Participants</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-target="7">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+            </div>
+            <h3>Event Goals:</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <p>Develop innovative solutions for pressing agricultural challenges</p>
+                </div>
+                <div class="timeline-item">
+                    <p>Foster collaboration between tech experts and agricultural specialists</p>
+                </div>
+                <div class="timeline-item">
+                    <p>Promote sustainable and efficient farming practices</p>
+                </div>
+                <div class="timeline-item">
+                    <p>Accelerate the adoption of technology in agriculture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-gallery" class="section project-gallery">
+        <h2>Project Showcase</h2>
+        <div class="filter-buttons">
+            <button class="filter-button" data-filter="all">All</button>
+            <button class="filter-button" data-filter="ai">AI</button>
+            <button class="filter-button" data-filter="iot">IoT</button>
+            <button class="filter-button" data-filter="robotics">Robotics</button>
+        </div>
+        <div class="projects">
+            <article class="project-card" data-category="ai">
+                <img src="/api/placeholder/400/200" alt="CropGuardian">
+                <div class="project-info">
+                    <h3>CropGuardian</h3>
+                    <div class="project-team">
+                        <div class="team-avatar">DH</div>
+                        <div class="team-avatar">FA</div>
+                        <p>Diego Herrera, Fatima Al-Sayegh</p>
+                    </div>
+                    <p>An integrated pest management system using AI-powered image recognition to identify crop diseases and suggest targeted treatments, reducing pesticide use by up to 60%.</p>
+                    <div class="project-impact">
+                        <div class="impact-bar" data-impact="60"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card" data-category="ai">
+                <img src="/api/placeholder/400/200" alt="SoilSage">
+                <div class="project-info">
+                    <h3>SoilSage</h3>
+                    <div class="project-team">
+                        <div class="team-avatar">OB</div>
+                        <div class="team-avatar">HY</div>
+                        <p>Olivia Brown, Hiroshi Yamamoto</p>
+                    </div>
+                    <p>A machine learning algorithm that analyzes soil composition and local climate data to recommend optimal crop rotations and fertilizer applications, increasing yield while preserving soil health.</p>
+                    <div class="project-impact">
+                        <div class="impact-bar" data-impact="75"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card" data-category="robotics">
+                <img src="/api/placeholder/400/200" alt="HarvestHero">
+                <div class="project-info">
+                    <h3>HarvestHero</h3>
+                    <div class="project-team">
+                        <div class="team-avatar">ZM</div>
+                        <div class="team-avatar">AP</div>
+                        <p>Zoe Martin, Andrei Popov</p>
+                    </div>
+                    <p>An autonomous harvesting robot capable of identifying ripe produce and gently harvesting it, reducing labor costs and food waste in the picking process.</p>
+                    <div class="project-impact">
+                        <div class="impact-bar" data-impact="80"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card" data-category="iot">
+                <img src="/api/placeholder/400/200" alt="AgroAlerts">
+                <div class="project-info">
+                    <h3>AgroAlerts</h3>
+                    <div class="project-team">
+                        <div class="team-avatar">KO</div>
+                        <div class="team-avatar">IJ</div>
+                        <p>Kwame Osei, Ingrid Johansson</p>
+                    </div>
+                    <p>A predictive analytics platform that uses satellite imagery and IoT sensors to forecast weather patterns and potential natural disasters, allowing farmers to take preventive measures to protect their crops.</p>
+                    <div class="project-impact">
+                        <div class="impact-bar" data-impact="70"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="event-recap">
+            <h2>Event Highlights</h2>
+            <div class="timeline">
+                <div class="day left">
+                    <div class="content">
+                        <h3 class="day-title">Day 1 - May 15, 2024</h3>
+                        <ul class="event-list">
+                            <li><span class="event-time">9:00 AM</span> - Opening Ceremony and Keynote by Dr. Maria Gonzalez, Leading AgriTech Researcher</li>
+                            <li><span class="event-time">10:30 AM</span> - Team Formation and Challenge Selection</li>
+                            <li><span class="event-time">12:00 PM</span> - Lunch and Networking</li>
+                            <li><span class="event-time">1:00 PM</span> - Ideation Workshops</li>
+                            <li><span class="event-time">3:00 PM</span> - Mentor Sessions</li>
+                            <li><span class="event-time">6:00 PM</span> - Progress Check-in and Dinner</li>
+                            <li><span class="event-time">8:00 PM</span> - Late Night Coding and Prototyping</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="day right">
+                    <div class="content">
+                        <h3 class="day-title">Day 2 - May 16, 2024</h3>
+                        <ul class="event-list">
+                            <li><span class="event-time">8:00 AM</span> - Breakfast and Team Check-ins</li>
+                            <li><span class="event-time">9:00 AM</span> - Continued Development and Prototyping</li>
+                            <li><span class="event-time">12:00 PM</span> - Lunch and Mini-Presentations</li>
+                            <li><span class="event-time">2:00 PM</span> - Technical Workshops (AI, IoT, and Blockchain in Agriculture)</li>
+                            <li><span class="event-time">4:00 PM</span> - Mentor Feedback Sessions</li>
+                            <li><span class="event-time">7:00 PM</span> - Dinner and Team Strategy Sessions</li>
+                            <li><span class="event-time">9:00 PM</span> - Overnight Hacking Continues</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="day left">
+                    <div class="content">
+                        <h3 class="day-title">Day 3 - May 17, 2024</h3>
+                        <ul class="event-list">
+                            <li><span class="event-time">8:00 AM</span> - Final Breakfast and Last-Minute Preparations</li>
+                            <li><span class="event-time">10:00 AM</span> - Project Submissions Deadline</li>
+                            <li><span class="event-time">11:00 AM</span> - Pitch Preparation Workshop</li>
+                            <li><span class="event-time">1:00 PM</span> - Lunch Break</li>
+                            <li><span class="event-time">2:00 PM</span> - Final Presentations to Judges</li>
+                            <li><span class="event-time">5:00 PM</span> - Judges Deliberation</li>
+                            <li><span class="event-time">6:00 PM</span> - Awards Ceremony and Closing Remarks</li>
+                            <li><span class="event-time">7:30 PM</span> - Networking Reception and Celebration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="media">
+            <h2>Hack and Harvest in Action</h2>
+            <p>Check out our photo gallery and video highlights from the event:</p>
+            <!-- <div class="timeline-nav">  
+                <button onclick="jumpToDay(1)">Day 1</button>
+                <button onclick="jumpToDay(2)">Day 2</button>
+                <button onclick="jumpToDay(3)">Day 3</button>
+            </div> -->
+            <div class="media-container">
+                <div class="photo-gallery">
+                    <h3>Photo Gallery</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item" onclick="openLightbox('op1.jpg')">
+                            <img src="op1.jpg" alt="Event photo 1" loading="lazy">
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox('op1.jpg')">
+                            <img src="op1.jpg" alt="Event photo 2" loading="lazy">
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox('op1.jpg')">
+                            <img src="op1.jpg" alt="Event photo 3" loading="lazy">
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox('op1.jpg')">
+                            <img src="op1.jpg" alt="Event photo 4" loading="lazy">
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox('op1.jpg')">
+                            <img src="op1.jpg" alt="Event photo 5" loading="lazy">
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox('op1.jpg')">
+                            <img src="op1.jpg" alt="Event photo 6" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="video-highlights">
+                    <h3>Video Highlights</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/vz4Xf1QlYm8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="lightbox" id="lightbox">
+            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="Lightbox image">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We organize innovative events to promote sustainable agriculture and technology.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@hackandharvest.com</li>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Address: 123 Tech Farm Lane, Agriville, AG 12345</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hack and Harvest. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4edd713136.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
